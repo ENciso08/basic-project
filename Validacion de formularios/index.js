@@ -69,7 +69,7 @@ const validarFormulario =(e) => {
 
 }
 
-// esta funcion la podemos reutilizar en todo el formulario
+// esta funcion la podemos reutilizar en todo el formulario , nos ayuda a indentificar el campo en el cual estamos trabajando(ya sea correo o telefono)
     const validarCampo = (expresion,input,campo) =>{
        // validamos con if si el usuario corresponde con la expresion regular
         if (expresion.test(input.value)) {
@@ -78,14 +78,14 @@ const validarFormulario =(e) => {
             document.querySelector(`#grupo__${campo} i`).classList.remove("fa-times-circle")
             document.querySelector(`#grupo__${campo} i`).classList.add("fa-times-check")
             document.querySelector(`#grupo__${campo} .formulario__input-error`).classList.remove('formulario__input-error-activo')
-            campos[campo] = false
+            campos[campo] = true;
         } else{
             document.getElementById(`grupo__${campo}`).classList.add("formulario__grupo-incorrecto");
             document.getElementById(`grupo__${campo}`).classList.remove("formulario__grupo-correcto");
             document.querySelector(`#grupo__${campo} i`).classList.add("fa-times-circle")
             document.querySelector(`#grupo__${campo} i`).classList.remove("fa-times-check")
             document.querySelector(`#grupo__${campo} .formulario__input-error`).classList.add('formulario__input-error-activo')
-            campos[campo] = true
+            campos[campo] = false;
 
         }
     }

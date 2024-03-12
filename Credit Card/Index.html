@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Liu+Jian+Mao+Cao&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet">
+    
+    
+
+    <title>Document</title>
+
+</head>
+<body>
+    
+
+<div class="contenedor">
+   <div class="main">
+    <div class="tarjeta" id="tarjeta">
+        
+        <!--Tarjeta delantera-->
+        <div class="delantera">
+            <div class="logo-marca">
+                <img src="./logos/visa.png" alt="">
+            </div>
+            <img src="./chip-tarjeta.png" class="chip" alt="">
+            <div class="datos">
+                <div class="grupo" id="numero">
+                    <p class="label">Numero tarjeta</p>
+                    <p class="numero">#### #### #### ####</p>
+                </div>
+                <div class="flexbox">
+                    <div class="grupo" id="nombre">
+                        <p class="label"> Nombre Tarjeta</p>
+                        <p class="nombre">Daniela Quintero</p>
+                    </div>
+
+                    <div class="grupo" id="expiracion"></div>
+                    <p class="label">expiracion</p>
+                    <p class="expiracion"><spam class="mes">MM</spam> / <span class="yer">AA</span></p>
+                </div>
+            </div>
+            
+        </div>
+
+        <!--Tarjeta trasera-->
+        <div class="trasera">
+            <div class="barra-magnetica"></div> 
+            <div class="datos">
+                <div class="grupo" id="firma">
+                    <p class="label">Firma</p>
+                    <div class="firma"><p></p></div>
+                </div>
+                <div class="grupo" id="ccv">
+                    <p class="label">CCV</p>
+                    <p class="ccv"></p>
+                </div>
+            </div>  
+            <p class="leyenda">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit</p> 
+            <a href="#" class="link-banco">www.bancol.com.co</a>
+        </div>
+        
+    </div> 
+        </div>
+    <!--contenedor boton-->
+
+        <div class="contenedor-btn">
+             <button class="btn-abrir-formulario" id = "btn-abrir-formulario">
+            <div class="btn"> <i class="fa-solid fa-plus"></i></div>
+        </button>
+    </div>
+
+    <!--formulario-->
+    
+    <form  class="formulario-tarjeta"  id="formulario-tarjeta" action="">
+        <div class="grupo">
+            <label for="inputNumero">Número Tarjeta</label>
+            <input type="text" id="inputNumero" maxlength="19" autocomplete="off" required placeholder="Agrega tu numero">
+            <span id="mostrar-texto">Input vacio</span>
+        </div>
+
+        <div class="grupo">
+            <label for="inputNombre">Nombre</label>
+            <input type="text" id="inputNombre" maxlength="19" autocomplete="off" required placeholder="Agrega tu nombre">
+        </div>
+
+        <div class="flexbox">
+            <div class="grupo expira">
+                <label for="selectMes">Expira</label>
+                <div class="flexbox">
+                    <div class="grupo-select">
+                        <select name="mes" id="selectMes">
+                            <option disabled selected >Mes</option>
+                        </select>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+
+                    <div class="grupo-select">
+                        <select name="year" id="selectYear">
+                            <option disabled selected >Año</option>
+                        </select>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grupo ccv">
+                <label for="inputCCV">CCV</label>
+                <input type="text" id="inputCCV" maxlength="3">
+            </div>
+        </div>
+        <button type="submit" class="btn-enviar"> Enviar</button>
+    </form>
+</div>
+
+
+    <script src="./Script/script.js"></script>
+
+</body>
+</html>
+

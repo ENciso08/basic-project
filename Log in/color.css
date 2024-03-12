@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Monserrat', sans-serif;
+}
+
+
+
+body{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(45deg , #E91E63, #42a5f5);
+}
+
+/* Form */
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+/* Login Box shape  */
+.login-box{
+    background: #FFF;
+    padding: 100px, 100px, 50px, 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 40%;
+    font-size:14px;
+    border-radius: 20px;
+    height: 50%;
+}
+
+/* User Icon conf */
+.user-icon{
+    background: #E91E63; 
+    border-radius: 50%;
+    width:100px ;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -80px;
+}
+
+.user-icon i{
+    font-size: 40px;
+    color: #FFF;
+    
+}
+
+.login{
+    width: 100%;
+}
+
+.form-group{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+input[type="text"].form-control{
+    font-size: 14px;
+    outline: none;
+    width: calc(60% - 60px);
+    border: 2px solid #ccc;
+    padding: 10px;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+input[type="text"].form-control, input[type="password"].form-control{
+    font-size: 14px;
+    outline: none;
+    width: calc(60% - 60px);
+    border: 2px solid #ccc;
+    padding: 15px;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+input[type="text"].form-control:hover, input[type="password"].form-control:hover{
+    border: 2px solid #f888d0;
+
+}
+
+input[type="text"].form-control:focus , input[type="password"].form-control:focus{
+    border: 2px solid #f888d0;
+
+}
+input[type="text"].form-control:active , input[type="password"].form-control:active{
+    border: 2px solid #f888d0;
+}
+
+label{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+label input[type="checkbox"]{
+width: 20px;
+height: 20px;
+margin-right: 10px;
+cursor: pointer;
+}
+
+button{
+    outline: none;
+    background: #E91E63;
+    color: #FFF;
+    display: block;
+    width: 60%;
+    border: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    cursor: pointer;
+    transform: all 0.3s ease;
+}
+
+button:hover{
+box-shadow: 5px 5px 5px #CCC ;
+}
+
+a{
+ color:#42a5f5 ;     
+}
+.serparater{
+    width: 100%;
+    border-top: 1px solid #f1f1f1;
+    border-top: 1px solid #f1f1f1;
+    padding: 10px 0;
+    text-align: center;
+    margin: 20pxm 0;
+    font-size: 12px;
+}
+
+.social-login{
+display: flex;
+width: 100%;
+justify-content: center;
+
+}
+
+.social-login a{
+display: inline-block;
+background: #f06292;
+color: #FFFF;
+padding: 16px;
+margin-right: 20px;
+text-decoration: none;
+cursor: pointer;
+transition: all 0.3s ease;
+
+}
+
+.social-login a:hover{
+    background: #E91E63;
+    box-shadow: 5px 5px 5px #CCC;
+}
+
+.social-login a i{
+    color: #FFF;
+    margin-right:10px  ;
+}
